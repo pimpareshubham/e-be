@@ -1,4 +1,4 @@
 module.exports = {
-    MONGODB_URL : "mongodb://127.0.0.1:27017/ecommerce",
+    MONGODB_URL : mongodb+srv://shubhampimpare111:<password>@cluster0.zt66gfs.mongodb.net/?retryWrites=true&w=majority,
     JWT_SECRET : "jajsndsjndksdnkasamdn"
 }
