@@ -3,7 +3,13 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+    {
+        origin: ["https://e-be-shubhams-projects-e350f7b7.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 const {MONGODB_URL} = require('./config')
 
 mongoose.connect(MONGODB_URL, {
